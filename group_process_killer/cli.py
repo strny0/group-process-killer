@@ -14,7 +14,7 @@ def parse_args() -> argparse.Namespace:
         "-t",
         "--trigger",
         type=str,
-        default="ctrl+r",
+        default="left windows + x",
         help="Keyboard shortcut specified in the format of the python `keyboard` module. Defaults to ctrl+r.",
     )
 
