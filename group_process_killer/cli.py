@@ -34,7 +34,7 @@ def main():
         loop.run_until_complete(server.serve())
     else:  # client
         client = Client(
-            args.url,
+            args.uri,
             on_trigger=lambda: kill_process(args.process),
             trigger=args.trigger,
             loop=loop,
